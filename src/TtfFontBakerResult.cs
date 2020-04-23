@@ -113,14 +113,17 @@ namespace SpriteFontPlus
 				kerning.Add(new Vector3(0, bounds.Width, character.XAdvance - bounds.Width));
 			}
 
-			var constructorInfo = typeof(SpriteFont).GetTypeInfo().DeclaredConstructors.First();
-			var font = (SpriteFont)constructorInfo.Invoke(new object[]
-			{
-				texture, glyphBounds, cropping,
-				chars, (int)FontFontPixelHeight, 0, kerning, ' '
-			});
+            //var constructorInfo = typeof(SpriteFont).GetConstructors()[0];
+            //var font = (SpriteFont)constructorInfo.Invoke(new object[]
+            //{
+            //    texture, glyphBounds, cropping,
+            //    chars, (int)FontFontPixelHeight, 0, kerning, ' '
+            //});
 
-			return font;
+            var font = new SpriteFont(texture, glyphBounds, cropping,
+                chars, (int)FontFontPixelHeight, 0, kerning, ' ');
+
+            return font;
 		}
 	}
 }
