@@ -17,12 +17,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Bladecoder.BMFontToSpriteFont" Version="1.0.1" />
     <PackageReference Include="MonoGame.Framework.Portable" PrivateAssets="All" Version="3.7.1.189" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Include="..\deps\SafeStbTrueTypeSharp\src\**\*.cs" LinkBase="SafeStbTrueTypeSharp" />
-    <Compile Include="..\deps\BMFontToSpriteFont\**\*.cs" LinkBase="BMFontToSpriteFont" />
   </ItemGroup>
 
   <ItemGroup>
