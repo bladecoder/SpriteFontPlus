@@ -79,9 +79,10 @@ namespace SpriteFontPlus
 			for (var i = 0; i < Pixels.Length; ++i)
 			{
 				var b = Pixels[i];
-				rgb[i].R = b;
-				rgb[i].G = b;
-				rgb[i].B = b;
+
+				rgb[i].R = 255;
+				rgb[i].G = 255;
+				rgb[i].B = 255;
 
 				rgb[i].A = b;
 			}

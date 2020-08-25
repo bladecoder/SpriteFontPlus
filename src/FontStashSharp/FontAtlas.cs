@@ -206,7 +206,8 @@ namespace FontStashSharp
 			for (var i = 0; i < colorBuffer.Length; ++i)
 			{
 				var c = buffer[i];
-				colorBuffer[i].R = colorBuffer[i].G = colorBuffer[i].B = colorBuffer[i].A = c;
+                colorBuffer[i].R = colorBuffer[i].G = colorBuffer[i].B = 255;
+                colorBuffer[i].A = c;
 			}
 
 			// Write to texture
